@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+    content="Width=device-width,
+    initial-scale=1.0"/>
+    <title>ArinzeDaniel Netflix Clone</title>
+    <link rel="stylesheet"href="style.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">NETFLIX</h1>
+        <input type="text"id="search"placeholder="Search movies..."/>
+    </header>
+    <section id="banner"class="banner"></section>
+    <main id="rows"></main>
+    <div id="modal"class="modal hidden">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <img id="modalImg"/>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+        </div>
+    </div>
+    <script type="module"src="app.js"></script>
+</body>
+</html>

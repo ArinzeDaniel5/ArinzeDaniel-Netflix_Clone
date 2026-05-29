@@ -1,0 +1,81 @@
+:root{
+    --bg:#111;
+    --text:#fff;
+    --accent:#e50914;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-famiy:Arial, sans-serif ;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    padding:15px 30px;
+    display:flex;
+    justify-content: space-between ;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.8),transparent);
+    z-index:10;
+}
+.logo{
+    color: var(--accent);
+}
+#search{
+    padding: 8px;
+    border :none ;
+}
+.banner{
+    height: 60vh;
+    display: flex ;
+    align-items : flex-end ;
+    padding: 40px;
+    background-size: cover;
+}
+.row{
+    margin:20px;
+}
+.row h2{
+    margin-bottom:10px;
+}
+.row-posters{
+    display: flex ;
+    overflow-x: auto ;l
+    gap:10px;
+}
+.row-posters::-webkit-scrollbar{
+    display :none ;
+}
+.poster{
+    width: 150px;
+    transition: transform 0.3s ease;
+    cursor:pointer;
+}
+.poster:hover{
+    transform:scale(1.2);
+}
+.modal{
+    position:fixed;
+    inset:0;
+    background: rgba(0,0,0,0.8);
+    display:flex;
+    justify-content: center ;
+    align-items :center ;
+}
+.hidden{
+    display :none ;
+}
+.banner {
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
